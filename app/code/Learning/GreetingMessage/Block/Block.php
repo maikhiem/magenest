@@ -9,7 +9,9 @@
 namespace GreetingMessage\Block;
 
 
-class Block
-{
+use Magento\Framework\View\Element\Template;
 
+class Block extends Template
+{
+    
 }
