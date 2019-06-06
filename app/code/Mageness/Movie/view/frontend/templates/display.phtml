@@ -1,0 +1,23 @@
+<h2>
+    <a href="<?php echo $block->getLandingsUrl(); ?>">All Movie</a>
+</h2>
+<table>
+    <tr>
+        <th>ID Movie</th>
+        <th>Name Movie</th>
+        <th>Name Director</th>
+        <th>Name Actor</th>
+        <th>Description</th>
+    </tr>
+    <?php foreach ($block->getMovie() as $value) :?>
+    <tr>
+
+        <td><?php echo $value['movie_id']?></td>
+        <td><?php echo $value['name']?></td>
+        <td><?php echo $value['director_name']?></td>
+        <td><?php echo $value['actor_name']?></td>
+        <td><?php echo $value['description']?></td>
+    </tr>
+    <?php endforeach; ?>
+</table>
+    

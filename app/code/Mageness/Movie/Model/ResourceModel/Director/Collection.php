@@ -9,7 +9,13 @@
 namespace Mageness\Movie\Model\ResourceModel\Director;
 
 
-class Collection
-{
+use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
+class Collection extends AbstractCollection
+{
+    public function _construct()
+    {
+        $this->_init('Mageness\Movie\Model\Director',
+            'Mageness\Movie\Model\ResourceModel\Director');
+    }
 }
